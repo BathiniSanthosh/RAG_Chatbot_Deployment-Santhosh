@@ -288,7 +288,7 @@ def ask_rag(question: str) -> dict:
 
     # Call Groq LLM
     response = groq_client.chat.completions.create(
-        model="gpt-oss-120b",
+        model="openai/gpt-oss-120b",
         messages=messages,
         temperature=0.2
     )
